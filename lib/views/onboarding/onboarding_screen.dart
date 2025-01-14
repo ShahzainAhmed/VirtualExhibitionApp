@@ -1,7 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:bounce/bounce.dart' as bouncebutton;
 import 'package:get/get.dart';
 import 'package:virtual_exhibition_app/resources/app_assets.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
