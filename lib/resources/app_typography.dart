@@ -143,6 +143,9 @@ class AppTypography {
   static TextStyle kBold28 =
       GoogleFonts.outfit(fontSize: 28.sp, fontWeight: FontWeight.w600);
 
+  static TextStyle kBold30 =
+      GoogleFonts.outfit(fontSize: 30.sp, fontWeight: FontWeight.w600);
+
   static TextStyle kBold32 =
       GoogleFonts.outfit(fontSize: 32.sp, fontWeight: FontWeight.w600);
 
