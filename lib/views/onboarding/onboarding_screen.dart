@@ -44,7 +44,7 @@ class OnboardingScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 60.h),
+            padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 40.h),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +80,8 @@ class OnboardingScreen extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 20.r,
-                      backgroundColor: AppColors.kWhiteColor,
+                      backgroundColor:
+                          AppColors.kWhiteColor.withValues(alpha: 0.5),
                       child: Icon(
                         Icons.arrow_back_ios_new,
                         color: AppColors.kBlackColor,
@@ -90,9 +91,14 @@ class OnboardingScreen extends StatelessWidget {
                     CircleAvatar(
                       radius: 20.r,
                       backgroundColor: AppColors.kWhiteColor,
-                      child: Icon(
-                        Icons.arrow_forward_ios,
-                        color: AppColors.kBlackColor,
+                      child: GestureDetector(
+                        onTap: () {
+                          Get.toNamed(AppRoutes.homescreen);
+                        },
+                        child: Icon(
+                          Icons.arrow_forward_ios,
+                          color: AppColors.kBlackColor,
+                        ),
                       ),
                     )
                   ],
