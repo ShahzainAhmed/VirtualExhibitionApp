@@ -1,4 +1,4 @@
-# VirtualExhibitionApp
+# Virtual Exhibition App
 
 https://dribbble.com/shots/16053004-Virtual-Exhibition-App-Design
 
