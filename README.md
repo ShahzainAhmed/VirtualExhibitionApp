@@ -1,4 +1,4 @@
-# Virtual Exhibition App
+# Virtual Exhibition App Flutter
 
 https://dribbble.com/shots/16053004-Virtual-Exhibition-App-Design
 
