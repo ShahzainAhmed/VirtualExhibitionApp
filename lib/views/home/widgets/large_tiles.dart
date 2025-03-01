@@ -35,11 +35,11 @@ class LargeTiles extends StatelessWidget {
             ),
             SizedBox(height: 10.h),
             Text(
-              "Michael Angelo's",
+              tileModel.title,
               style: AppTypography.kMedium14,
             ),
             SizedBox(height: 2.h),
-            Text("May 23 - June 23",
+            Text(tileModel.subtitle,
                 style: AppTypography.kLight12
                     .copyWith(color: AppColors.kBlackColor.withAlpha(100))),
           ],

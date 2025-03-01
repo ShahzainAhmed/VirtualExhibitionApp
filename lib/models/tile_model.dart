@@ -24,8 +24,8 @@ class TileModel {
 
 List<TileModel> tileModelList = [
   TileModel(
-    title: "La Costa",
-    subtitle: "Peru, South America",
+    title: "Michael Angelo's",
+    subtitle: "May 23 - June 23",
     rating: "4.2",
     image: AppAssets.kPicture1,
     distance: "7",
@@ -35,8 +35,8 @@ List<TileModel> tileModelList = [
         "This is the shortest of three routes, but certainly not any less interesting. The North Wales way leads you in 120 Km from Abrgwygregyn to the beautiful island of Anglessey.",
   ),
   TileModel(
-    title: "Rio Dee Janeiro",
-    subtitle: "Brazil, South America",
+    title: "Flower Poetry #1",
+    subtitle: "May 23 - June 23",
     rating: "4.6",
     image: AppAssets.kPicture2,
     distance: "12",
