@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,23 +18,37 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        titleSpacing: 20.w,
-        leadingWidth: 20.w,
-        leading: CircleAvatar(
-          backgroundImage: AssetImage(AppAssets.kPicture1),
-        ),
-        title: Text(
-          "Current location",
-          style: AppTypography.kBold12.copyWith(color: AppColors.kSmokeColor),
-        ),
-        actions: [
-          Padding(
-            padding: EdgeInsets.only(right: 20.w),
-            child: CircleAvatar(
-              backgroundImage: AssetImage(AppAssets.kPicture1),
-            ),
+        titleSpacing: 0,
+        title: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.w),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              CircleAvatar(
+                backgroundImage: AssetImage(AppAssets.kPicture1),
+              ),
+              Column(
+                children: [
+                  Text(
+                    "Current location",
+                    style: AppTypography.kMedium12
+                        .copyWith(color: AppColors.kBlackColor.withAlpha(100)),
+                  ),
+                  Row(
+                    children: [
+                      Icon(CupertinoIcons.location_solid, size: 14),
+                      SizedBox(width: 4.w),
+                      Text("Birmingham, UK", style: AppTypography.kBold12),
+                    ],
+                  ),
+                ],
+              ),
+              CircleAvatar(
+                backgroundImage: AssetImage(AppAssets.kPicture1),
+              )
+            ],
           ),
-        ],
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +91,7 @@ class HomeScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Exhibition", style: AppTypography.kBold16),
+                Text("Exhibition", style: AppTypography.kBold18),
                 Text(
                   "See all",
                   style: AppTypography.kMedium12
@@ -89,7 +102,7 @@ class HomeScreen extends StatelessWidget {
           ),
           SizedBox(height: 10.h),
           SizedBox(
-            height: 200.h,
+            height: 250.h,
             width: Get.width,
             child: ListView.separated(
               physics: const BouncingScrollPhysics(),
@@ -98,18 +111,14 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: tileModelList.length,
               itemBuilder: (context, index) {
-                return FadeInUp(
-                  controller: (controller) => controller = controller,
-                  duration: const Duration(milliseconds: 1500),
-                  child: LargeTiles(
-                    tileModel: tileModelList[index],
-                    onTap: () {
-                      Get.toNamed(
-                        AppRoutes.detailScreen,
-                        arguments: tileModelList[index],
-                      );
-                    },
-                  ),
+                return LargeTiles(
+                  tileModel: tileModelList[index],
+                  onTap: () {
+                    Get.toNamed(
+                      AppRoutes.detailScreen,
+                      arguments: tileModelList[index],
+                    );
+                  },
                 );
               },
             ),
@@ -139,4 +148,21 @@ Padding(
             //     ),
             //   ),
             // )
+ */
+
+
+/* 
+FadeInUp(
+                  controller: (controller) => controller = controller,
+                  duration: const Duration(milliseconds: 1500),
+                  child: LargeTiles(
+                    tileModel: tileModelList[index],
+                    onTap: () {
+                      Get.toNamed(
+                        AppRoutes.detailScreen,
+                        arguments: tileModelList[index],
+                      );
+                    },
+                  ),
+                )
  */
