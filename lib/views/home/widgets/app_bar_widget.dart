@@ -1,16 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:virtual_exhibition_app/models/categories_model.dart';
-import 'package:virtual_exhibition_app/models/tile_model.dart';
 import 'package:virtual_exhibition_app/resources/app_assets.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
 import 'package:virtual_exhibition_app/resources/app_typography.dart';
-import 'package:virtual_exhibition_app/routes/app_routes.dart';
-import 'package:virtual_exhibition_app/views/home/widgets/bottom_navbar_widget.dart';
-import 'package:virtual_exhibition_app/views/home/widgets/categories_widget.dart';
-import 'package:virtual_exhibition_app/views/home/widgets/large_tiles.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key});

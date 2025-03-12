@@ -47,10 +47,11 @@ class _DetailScreenState extends State<DetailScreen> {
                 delay: const Duration(milliseconds: 300),
                 child: CircleAvatar(
                   radius: 24,
-                  backgroundColor: AppColors.kWhiteColor.withValues(alpha: 0.7),
+                  backgroundColor: AppColors.kBlackColor,
                   child: IconButton(
                     onPressed: () => Get.back(),
-                    icon: const Icon(Icons.arrow_back_ios_new),
+                    icon: const Icon(Icons.arrow_back_ios_new,
+                        color: AppColors.kWhiteColor),
                   ),
                 ),
               ),
@@ -58,9 +59,13 @@ class _DetailScreenState extends State<DetailScreen> {
                 controller: (controller) => controller = controller,
                 delay: const Duration(milliseconds: 300),
                 child: CircleAvatar(
-                  backgroundColor: AppColors.kWhiteColor.withValues(alpha: 0.7),
                   radius: 24,
-                  child: const FavoriteButton(),
+                  backgroundColor: AppColors.kBlackColor,
+                  child: IconButton(
+                    onPressed: () => Get.back(),
+                    icon: const Icon(Icons.share_outlined,
+                        color: AppColors.kWhiteColor),
+                  ),
                 ),
               )
             ],
@@ -71,69 +76,49 @@ class _DetailScreenState extends State<DetailScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ImageContainer(tileModel: tileModel),
-          SizedBox(height: 30.h),
+          SizedBox(height: 24.h),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.w),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                FadeInUp(
-                  controller: (controller) => controller = controller,
-                  delay: const Duration(milliseconds: 500),
-                  child: SpecsWidget(
-                    title: "Distance",
-                    value: "${tileModel.distance}Km",
-                  ),
-                ),
-                FadeInUp(
-                  controller: (controller) => controller = controller,
-                  delay: const Duration(milliseconds: 800),
-                  child: SpecsWidget(
-                    title: "Temp",
-                    value: "${tileModel.temp}° C",
-                  ),
-                ),
-                FadeInUp(
-                  controller: (controller) => controller = controller,
-                  delay: const Duration(milliseconds: 1100),
-                  child: SpecsWidget(
-                    title: "Rating",
-                    value: tileModel.rating,
-                  ),
-                ),
-              ],
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: Text(tileModel.title, style: AppTypography.kBold22),
+          ),
+          SizedBox(height: 8.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: Text(tileModel.year,
+                style: AppTypography.kMedium16.copyWith(
+                  color: AppColors.kDarkGreyColor.withValues(alpha: 0.4),
+                  fontStyle: FontStyle.italic,
+                )),
+          ),
+          SizedBox(height: 20.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: Text("About the artist", style: AppTypography.kMedium18),
+          ),
+          SizedBox(height: 8.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: Text(
+              tileModel.description,
+              style: AppTypography.kMedium16
+                  .copyWith(color: AppColors.kBlackColor.withAlpha(180)),
             ),
           ),
           SizedBox(height: 20.h),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w),
-            child: FadeInUp(
-              controller: (controller) => controller = controller,
-              delay: const Duration(milliseconds: 1200),
-              child: Text(
-                "Description",
-                style: AppTypography.kBold16,
-              ),
-            ),
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: Text("About the painting", style: AppTypography.kMedium18),
           ),
           SizedBox(height: 8.h),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30.w),
-            child: FadeInUp(
-              controller: (controller) => controller = controller,
-              delay: const Duration(milliseconds: 1300),
-              child: Text(
-                tileModel.description,
-                style: AppTypography.kLight12
-                    .copyWith(color: AppColors.kGreyColor),
-              ),
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: Text(
+              tileModel.description,
+              style: AppTypography.kMedium16
+                  .copyWith(color: AppColors.kBlackColor.withAlpha(180)),
             ),
           ),
-          FadeInUp(
-            controller: (controller) => controller = controller,
-            delay: const Duration(milliseconds: 1400),
-            child: BottomSheetWidget(price: "\$${tileModel.price}"),
-          )
+          // BottomSheetWidget(price: "\$${tileModel.price}")
         ],
       ),
     );

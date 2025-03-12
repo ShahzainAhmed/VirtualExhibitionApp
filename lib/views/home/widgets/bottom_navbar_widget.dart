@@ -3,7 +3,6 @@ import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
 
-
 class BottomNavbarWidget extends StatefulWidget {
   const BottomNavbarWidget({super.key});
 
@@ -53,7 +52,7 @@ class _BottomNavbarWidgetState extends State<BottomNavbarWidget> {
         ),
         CurvedNavigationBarItem(
           child: Icon(
-            Icons.person_outline,
+            Icons.shopping_cart_outlined,
             size: _bottomNavIndex == 2 ? 30 : 26,
             color: _bottomNavIndex == 2
                 ? AppColors.kWhiteColor
@@ -63,7 +62,7 @@ class _BottomNavbarWidgetState extends State<BottomNavbarWidget> {
         CurvedNavigationBarItem(
           child: Icon(
             size: _bottomNavIndex == 3 ? 30 : 26,
-            Icons.favorite_outline,
+            Icons.person_outline_sharp,
             color: _bottomNavIndex == 3
                 ? AppColors.kWhiteColor
                 : AppColors.kDarkGreyColor,

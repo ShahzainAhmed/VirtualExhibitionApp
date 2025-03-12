@@ -13,7 +13,7 @@ class CategoriesWidget extends StatelessWidget {
     return Column(
       children: [
         CircleAvatar(
-          radius: 32.r,
+          radius: 34.r,
           backgroundColor: AppColors.kBlackColor,
           child: Icon(categoriesModel.icon,
               color: AppColors.kWhiteColor, size: 34),

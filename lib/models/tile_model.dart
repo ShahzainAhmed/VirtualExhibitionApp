@@ -3,6 +3,7 @@ import 'package:virtual_exhibition_app/resources/app_assets.dart';
 class TileModel {
   final String title;
   final String subtitle;
+  final String year;
   final String image;
   final String rating;
   final String distance;
@@ -13,6 +14,7 @@ class TileModel {
   TileModel({
     required this.title,
     required this.subtitle,
+    required this.year,
     required this.rating,
     required this.image,
     required this.distance,
@@ -26,6 +28,7 @@ List<TileModel> tileModelList = [
   TileModel(
     title: "Michael Angelo's",
     subtitle: "May 23 - June 23",
+    year: "1849-1851 by William Andrews Nesfield",
     rating: "4.2",
     image: AppAssets.kPicture1,
     distance: "7",
@@ -37,6 +40,7 @@ List<TileModel> tileModelList = [
   TileModel(
     title: "Flower Poetry #1",
     subtitle: "May 23 - June 23",
+    year: "1849-1851 by William Andrews Nesfield",
     rating: "4.6",
     image: AppAssets.kPicture2,
     distance: "12",
@@ -48,6 +52,7 @@ List<TileModel> tileModelList = [
   TileModel(
     title: "Redeemer",
     subtitle: "Brazil, South America",
+    year: "1849-1851 by William Andrews Nesfield",
     rating: "4.8",
     image: AppAssets.kPicture4,
     distance: "10",
@@ -59,6 +64,7 @@ List<TileModel> tileModelList = [
   TileModel(
     title: "Sugarloaf Mountain",
     subtitle: "Brazil, South America",
+    year: "1849-1851 by William Andrews Nesfield",
     rating: "4.3",
     image: AppAssets.kPicture5,
     distance: "8",
@@ -70,6 +76,7 @@ List<TileModel> tileModelList = [
   TileModel(
     title: "Salvador",
     subtitle: "Brazil, South America",
+    year: "1849-1851 by William Andrews Nesfield",
     rating: "4.5",
     image: AppAssets.kPicture3,
     distance: "15",
@@ -81,6 +88,7 @@ List<TileModel> tileModelList = [
   TileModel(
     title: "Rainforest",
     subtitle: "Brazil, South America",
+    year: "1849-1851 by William Andrews Nesfield",
     rating: "4.4",
     image: AppAssets.kPicture6,
     distance: "20",
