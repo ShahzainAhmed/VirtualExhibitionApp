@@ -18,31 +18,35 @@ class LargeTiles extends StatelessWidget {
       onTap: onTap,
       child: Hero(
         tag: tileModel.image,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 190.h,
-              padding: const EdgeInsets.all(20),
-              width: 170.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.r),
-                image: DecorationImage(
-                  image: AssetImage(tileModel.image),
-                  fit: BoxFit.cover,
+        child: Material(
+          color: AppColors.kTransparentColor,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: 175.h,
+                padding: const EdgeInsets.all(20),
+                width: 165.w,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.r),
+                  image: DecorationImage(
+                    image: AssetImage(tileModel.image),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 10.h),
-            Text(
-              tileModel.title,
-              style: AppTypography.kMedium14,
-            ),
-            SizedBox(height: 2.h),
-            Text(tileModel.subtitle,
-                style: AppTypography.kLight12
-                    .copyWith(color: AppColors.kBlackColor.withAlpha(100))),
-          ],
+              SizedBox(height: 10.h),
+              Text(
+                tileModel.title,
+                style: AppTypography.kMedium14
+                    .copyWith(color: AppColors.kBlackColor),
+              ),
+              SizedBox(height: 2.h),
+              Text(tileModel.subtitle,
+                  style: AppTypography.kLight12
+                      .copyWith(color: AppColors.kBlackColor.withAlpha(100))),
+            ],
+          ),
         ),
       ),
     );

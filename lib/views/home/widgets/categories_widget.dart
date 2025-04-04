@@ -13,7 +13,7 @@ class CategoriesWidget extends StatelessWidget {
     return Column(
       children: [
         CircleAvatar(
-          radius: 34.r,
+          radius: 32.r,
           backgroundColor: AppColors.kBlackColor,
           child: Icon(categoriesModel.icon,
               color: AppColors.kWhiteColor, size: 34),
@@ -21,8 +21,9 @@ class CategoriesWidget extends StatelessWidget {
         SizedBox(height: 6.h),
         Text(
           categoriesModel.title,
-          style: AppTypography.kMedium10,
-          selectionColor: AppColors.kBlackColor,
+          style: AppTypography.kMedium10.copyWith(
+            color: AppColors.kBlackColor,
+          ),
         ),
       ],
     );

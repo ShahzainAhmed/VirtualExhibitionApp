@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             SizedBox(height: 10.h),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              padding: EdgeInsets.symmetric(horizontal: 30.w),
               child: Text(
                 "Good Morning, \nShahzain...",
                 style: AppTypography.kBold24,
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 10.h),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              padding: EdgeInsets.symmetric(horizontal: 30.w),
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 decoration: BoxDecoration(
@@ -67,14 +67,14 @@ class HomeScreen extends StatelessWidget {
                 separatorBuilder: (context, index) => SizedBox(width: 10.w),
                 itemCount: categoriesIcons.length,
                 scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                padding: EdgeInsets.symmetric(horizontal: 30.w),
                 itemBuilder: (context, index) =>
                     CategoriesWidget(categoriesModel: categoriesIcons[index]),
               ),
             ),
             SizedBox(height: 20.h),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              padding: EdgeInsets.symmetric(horizontal: 30.w),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -93,7 +93,7 @@ class HomeScreen extends StatelessWidget {
               width: Get.width,
               child: ListView.separated(
                 physics: const BouncingScrollPhysics(),
-                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                padding: EdgeInsets.symmetric(horizontal: 30.w),
                 separatorBuilder: (context, index) => SizedBox(width: 14.w),
                 scrollDirection: Axis.horizontal,
                 itemCount: tileModelList.length,
