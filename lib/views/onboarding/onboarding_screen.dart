@@ -6,6 +6,7 @@ import 'package:virtual_exhibition_app/resources/app_assets.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
 import 'package:virtual_exhibition_app/resources/app_typography.dart';
 import 'package:virtual_exhibition_app/routes/app_routes.dart';
+import 'package:virtual_exhibition_app/views/home/widgets/bottom_navbar_widget.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -92,7 +93,7 @@ class OnboardingScreen extends StatelessWidget {
                       backgroundColor: AppColors.kWhiteColor,
                       child: GestureDetector(
                         onTap: () {
-                          Get.toNamed(AppRoutes.homescreen);
+                          Get.offAll(() => BottomNavbarWidget());
                         },
                         child: Icon(
                           Icons.arrow_forward_ios,

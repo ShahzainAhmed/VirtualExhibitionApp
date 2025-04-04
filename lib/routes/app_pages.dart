@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:virtual_exhibition_app/routes/app_routes.dart';
 import 'package:virtual_exhibition_app/views/detail_screen/detail_screen.dart';
+import 'package:virtual_exhibition_app/views/exhibition/exhibition_screen.dart';
 import 'package:virtual_exhibition_app/views/home/home_screen.dart';
 import 'package:virtual_exhibition_app/views/onboarding/onboarding_screen.dart';
 
@@ -18,6 +19,10 @@ class AppPages {
     GetPage(
       name: AppRoutes.detailScreen,
       page: () => const DetailScreen(),
+    ),
+    GetPage(
+      name: AppRoutes.exhibitionScreen,
+      page: () => const ExhibitionScreen(),
     )
   ];
 }

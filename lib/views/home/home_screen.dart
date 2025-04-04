@@ -8,9 +8,9 @@ import 'package:virtual_exhibition_app/resources/app_colors.dart';
 import 'package:virtual_exhibition_app/resources/app_typography.dart';
 import 'package:virtual_exhibition_app/routes/app_routes.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/app_bar_widget.dart';
-import 'package:virtual_exhibition_app/views/home/widgets/bottom_navbar_widget.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/categories_widget.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/large_tiles.dart';
+import 'package:virtual_exhibition_app/views/home/widgets/search_bar_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -36,29 +36,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10.h),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 30.w),
-              child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 20.w),
-                decoration: BoxDecoration(
-                  color: AppColors.kSmokeColor.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(100.r),
-                ),
-                child: ListTile(
-                  minVerticalPadding: 0,
-                  contentPadding: EdgeInsets.zero,
-                  leading: Icon(
-                    CupertinoIcons.search,
-                    color: AppColors.kGreyColor.withValues(alpha: 0.6),
-                  ),
-                  title: Text(
-                    "Search exhibition, event, or artwork...",
-                    style: AppTypography.kLight12
-                        .copyWith(color: AppColors.kSmokeColor),
-                  ),
-                ),
-              ),
-            ),
+            SearchBarWidget(),
             SizedBox(height: 24.h),
             SizedBox(
               height: 80.h,
@@ -79,10 +57,13 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Exhibition", style: AppTypography.kBold18),
-                  Text(
-                    "See all",
-                    style: AppTypography.kMedium12
-                        .copyWith(color: AppColors.kSmokeColor),
+                  GestureDetector(
+                    onTap: () => Get.toNamed(AppRoutes.exhibitionScreen),
+                    child: Text(
+                      "See all",
+                      style: AppTypography.kMedium12
+                          .copyWith(color: AppColors.kSmokeColor),
+                    ),
                   ),
                 ],
               ),
@@ -114,7 +95,6 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const BottomNavbarWidget(),
     );
   }
 }
