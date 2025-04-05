@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:virtual_exhibition_app/resources/app_assets.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
 import 'package:virtual_exhibition_app/resources/app_typography.dart';
+import 'package:virtual_exhibition_app/routes/app_routes.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key});
@@ -17,10 +19,13 @@ class AppBarWidget extends StatelessWidget {
         children: [
           CircleAvatar(
             backgroundColor: AppColors.kBlackColor,
-            child: Icon(
-              Icons.grid_view_outlined,
-              color: AppColors.kWhiteColor,
-              size: 20,
+            child: GestureDetector(
+              onTap: () => Get.toNamed(AppRoutes.aboutScreen),
+              child: Icon(
+                Icons.grid_view_outlined,
+                color: AppColors.kWhiteColor,
+                size: 20,
+              ),
             ),
           ),
           Column(
@@ -39,7 +44,10 @@ class AppBarWidget extends StatelessWidget {
               ),
             ],
           ),
-          CircleAvatar(backgroundImage: AssetImage(AppAssets.kPicture1))
+          CircleAvatar(
+            backgroundColor: AppColors.kBackgroundColor,
+            backgroundImage: AssetImage(AppAssets.kProfile),
+          ),
         ],
       ),
     );

@@ -79,7 +79,7 @@ class _DetailScreenState extends State<DetailScreen> {
           SizedBox(height: 24.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text(tileModel.title, style: AppTypography.kBold22),
+            child: Text(tileModel.title, style: AppTypography.kBold20),
           ),
           SizedBox(height: 8.h),
           Padding(
