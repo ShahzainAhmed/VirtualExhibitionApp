@@ -76,43 +76,69 @@ class _DetailScreenState extends State<DetailScreen> {
           SizedBox(height: 24.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text(tileModel.title, style: AppTypography.kBold20),
+            child: FadeInUp(
+              controller: (controller) => controller = controller,
+              delay: const Duration(milliseconds: 400),
+              child: Text(tileModel.title, style: AppTypography.kBold20),
+            ),
           ),
           SizedBox(height: 8.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text(tileModel.year,
-                style: AppTypography.kMedium16.copyWith(
-                  color: AppColors.kDarkGreyColor.withValues(alpha: 0.4),
-                  fontStyle: FontStyle.italic,
-                )),
-          ),
-          SizedBox(height: 20.h),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text("About the artist", style: AppTypography.kMedium18),
-          ),
-          SizedBox(height: 8.h),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text(
-              tileModel.description,
-              style: AppTypography.kMedium16
-                  .copyWith(color: AppColors.kBlackColor.withAlpha(180)),
+            child: FadeInUp(
+              controller: (controller) => controller = controller,
+              delay: const Duration(milliseconds: 500),
+              child: Text(tileModel.year,
+                  style: AppTypography.kMedium16.copyWith(
+                    color: AppColors.kDarkGreyColor.withValues(alpha: 0.4),
+                    fontStyle: FontStyle.italic,
+                  )),
             ),
           ),
           SizedBox(height: 20.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text("About the painting", style: AppTypography.kMedium18),
+            child: FadeInUp(
+              controller: (controller) => controller = controller,
+              delay: const Duration(milliseconds: 600),
+              child: Text("About the artist", style: AppTypography.kMedium18),
+            ),
           ),
           SizedBox(height: 8.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 28.w),
-            child: Text(
-              tileModel.description,
-              style: AppTypography.kMedium16
-                  .copyWith(color: AppColors.kBlackColor.withAlpha(180)),
+            child: FadeInUp(
+              controller: (controller) => controller = controller,
+              delay: const Duration(milliseconds: 700),
+              child: Text(
+                tileModel.description,
+                style: AppTypography.kMedium16
+                    .copyWith(color: AppColors.kBlackColor.withAlpha(180)),
+              ),
+            ),
+          ),
+          SizedBox(height: 20.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: FadeInUp(
+                controller: (controller) => controller = controller,
+                delay: const Duration(milliseconds: 800),
+                child: Text(
+                  "About the painting",
+                  style: AppTypography.kMedium18,
+                )),
+          ),
+          SizedBox(height: 8.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 28.w),
+            child: FadeInUp(
+              controller: (controller) => controller = controller,
+              delay: const Duration(milliseconds: 900),
+              child: Text(
+                tileModel.description,
+                style: AppTypography.kMedium16
+                    .copyWith(color: AppColors.kBlackColor.withAlpha(180)),
+              ),
             ),
           ),
           // BottomSheetWidget(price: "\$${tileModel.price}")

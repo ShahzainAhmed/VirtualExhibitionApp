@@ -50,7 +50,7 @@ class OnboardingScreen extends StatelessWidget {
               children: [
                 BounceInDown(
                   controller: (controller) => controller = controller,
-                  delay: const Duration(milliseconds: 400),
+                  delay: const Duration(milliseconds: 600),
                   child: Text(
                     "A Virtual World of \nThe Greatest \nPainting",
                     style: AppTypography.kBold30.copyWith(
@@ -63,7 +63,7 @@ class OnboardingScreen extends StatelessWidget {
                 SizedBox(height: 12.h),
                 BounceInDown(
                   controller: (controller) => controller = controller,
-                  delay: const Duration(milliseconds: 500),
+                  delay: const Duration(milliseconds: 700),
                   child: Text(
                     "The influential critic John Ruskin became a close friend, neighbor, and great supporter of the artist.",
                     style: AppTypography.kLight14.copyWith(
@@ -77,26 +77,34 @@ class OnboardingScreen extends StatelessWidget {
                 SizedBox(height: 20.h),
                 Row(
                   children: [
-                    CircleAvatar(
-                      radius: 20.r,
-                      backgroundColor:
-                          AppColors.kWhiteColor.withValues(alpha: 0.5),
-                      child: Icon(
-                        Icons.arrow_back_ios_new,
-                        color: AppColors.kBlackColor,
+                    BounceInUp(
+                      controller: (controller) => controller = controller,
+                      delay: const Duration(milliseconds: 800),
+                      child: CircleAvatar(
+                        radius: 20.r,
+                        backgroundColor:
+                            AppColors.kWhiteColor.withValues(alpha: 0.5),
+                        child: Icon(
+                          Icons.arrow_back_ios_new,
+                          color: AppColors.kBlackColor,
+                        ),
                       ),
                     ),
                     SizedBox(width: 14.w),
-                    CircleAvatar(
-                      radius: 20.r,
-                      backgroundColor: AppColors.kWhiteColor,
-                      child: GestureDetector(
-                        onTap: () {
-                          Get.offAll(() => BottomNavbarWidget());
-                        },
-                        child: Icon(
-                          Icons.arrow_forward_ios,
-                          color: AppColors.kBlackColor,
+                    BounceInUp(
+                      controller: (controller) => controller = controller,
+                      delay: const Duration(milliseconds: 1300),
+                      child: CircleAvatar(
+                        radius: 20.r,
+                        backgroundColor: AppColors.kWhiteColor,
+                        child: GestureDetector(
+                          onTap: () {
+                            Get.offAll(() => BottomNavbarWidget());
+                          },
+                          child: Icon(
+                            Icons.arrow_forward_ios,
+                            color: AppColors.kBlackColor,
+                          ),
                         ),
                       ),
                     )

@@ -1,3 +1,5 @@
+import 'package:animate_do/animate_do.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -29,13 +31,30 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 10.h),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
-              child: Text(
-                "Good Morning, \nShahzain...",
-                style: AppTypography.kBold24,
+              child: FadeInUp(
+                controller: (controller) => controller = controller,
+                delay: const Duration(milliseconds: 400),
+                child: SizedBox(
+                  height: 70.h,
+                  child: AnimatedTextKit(
+                    isRepeatingAnimation: false,
+                    animatedTexts: [
+                      TyperAnimatedText(
+                        "Good Morning, \nShahzain Ahmed!",
+                        textStyle: AppTypography.kBold24,
+                        speed: const Duration(milliseconds: 85),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 10.h),
-            SearchBarWidget(),
+            FadeInUp(
+              controller: (controller) => controller = controller,
+              delay: const Duration(milliseconds: 500),
+              child: SearchBarWidget(),
+            ),
             SizedBox(height: 24.h),
             SizedBox(
               height: 80.h,
@@ -45,23 +64,35 @@ class HomeScreen extends StatelessWidget {
                 itemCount: categoriesIcons.length,
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.symmetric(horizontal: 30.w),
-                itemBuilder: (context, index) =>
-                    CategoriesWidget(categoriesModel: categoriesIcons[index]),
+                itemBuilder: (context, index) => FadeInUp(
+                  controller: (controller) => controller = controller,
+                  delay: const Duration(milliseconds: 700),
+                  child:
+                      CategoriesWidget(categoriesModel: categoriesIcons[index]),
+                ),
               ),
             ),
-            SizedBox(height: 20.h),
+            SizedBox(height: 16.h),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Exhibition", style: AppTypography.kBold18),
+                  FadeInUp(
+                    controller: (controller) => controller = controller,
+                    delay: const Duration(milliseconds: 800),
+                    child: Text("Exhibition", style: AppTypography.kBold18),
+                  ),
                   GestureDetector(
                     onTap: () => Get.toNamed(AppRoutes.exhibitionScreen),
-                    child: Text(
-                      "See all",
-                      style: AppTypography.kMedium12
-                          .copyWith(color: AppColors.kSmokeColor),
+                    child: FadeInUp(
+                      controller: (controller) => controller = controller,
+                      delay: const Duration(milliseconds: 900),
+                      child: Text(
+                        "See all",
+                        style: AppTypography.kMedium12
+                            .copyWith(color: AppColors.kSmokeColor),
+                      ),
                     ),
                   ),
                 ],
@@ -78,14 +109,18 @@ class HomeScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: tileModelList.length,
                 itemBuilder: (context, index) {
-                  return LargeTiles(
-                    tileModel: tileModelList[index],
-                    onTap: () {
-                      Get.toNamed(
-                        AppRoutes.detailScreen,
-                        arguments: tileModelList[index],
-                      );
-                    },
+                  return FadeInUp(
+                    controller: (controller) => controller = controller,
+                    delay: const Duration(milliseconds: 300),
+                    child: LargeTiles(
+                      tileModel: tileModelList[index],
+                      onTap: () {
+                        Get.toNamed(
+                          AppRoutes.detailScreen,
+                          arguments: tileModelList[index],
+                        );
+                      },
+                    ),
                   );
                 },
               ),

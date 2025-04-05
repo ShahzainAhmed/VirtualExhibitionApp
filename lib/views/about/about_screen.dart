@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -11,6 +12,16 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        leading: IconButton(
+            onPressed: () => Get.back(),
+            icon: Icon(
+              Icons.arrow_back_ios_new,
+              color: AppColors.kWhiteColor,
+            )),
+        backgroundColor: AppColors.kTransparentColor,
+      ),
       body: Container(
         height: Get.height,
         decoration: BoxDecoration(
@@ -27,40 +38,52 @@ class AboutScreen extends StatelessWidget {
           padding: EdgeInsets.only(left: 30.w, right: 30.w, top: 140.h),
           child: Column(
             children: [
-              Container(
-                height: 300.h,
-                width: 220.w,
-                padding: EdgeInsets.all(7.r),
-                decoration: BoxDecoration(
-                  color: AppColors.kWhiteColor.withAlpha(70),
-                  borderRadius: BorderRadius.circular(35.r),
-                ),
+              FadeInUp(
+                controller: (controller) => controller = controller,
+                delay: const Duration(milliseconds: 300),
                 child: Container(
+                  height: 300.h,
+                  width: 220.w,
+                  padding: EdgeInsets.all(7.r),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30.r),
-                    image: DecorationImage(
-                      image: AssetImage(AppAssets.kAbout),
-                      fit: BoxFit.cover,
+                    color: AppColors.kWhiteColor.withAlpha(70),
+                    borderRadius: BorderRadius.circular(35.r),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30.r),
+                      image: DecorationImage(
+                        image: AssetImage(AppAssets.kAbout),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
               ),
               SizedBox(height: 20.h),
               Center(
-                child: Text(
-                  "Interior of a Mansion",
-                  style: AppTypography.kDidotTitle34.copyWith(
-                    color: AppColors.kWhiteColor,
+                child: FadeInUp(
+                  controller: (controller) => controller = controller,
+                  delay: const Duration(milliseconds: 400),
+                  child: Text(
+                    "Interior of a Mansion",
+                    style: AppTypography.kDidotTitle34.copyWith(
+                      color: AppColors.kWhiteColor,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
               SizedBox(height: 10.h),
-              Text(
-                "The influencial critic John Ruskin became a close friend, neighbor, and great support of the artist.",
-                style: AppTypography.kLight14
-                    .copyWith(color: AppColors.kWhiteColor),
-                textAlign: TextAlign.center,
+              FadeInUp(
+                controller: (controller) => controller = controller,
+                delay: const Duration(milliseconds: 500),
+                child: Text(
+                  "The influencial critic John Ruskin became a close friend, neighbor, and great support of the artist.",
+                  style: AppTypography.kLight14
+                      .copyWith(color: AppColors.kWhiteColor),
+                  textAlign: TextAlign.center,
+                ),
               )
             ],
           ),
