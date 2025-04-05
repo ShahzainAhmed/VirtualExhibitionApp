@@ -189,6 +189,31 @@ class AppTypography {
   static TextStyle kExtraBold40 =
       GoogleFonts.outfit(fontSize: 40.sp, fontWeight: FontWeight.w700);
 
+  static TextStyle kDidotRegular34 = TextStyle(
+    fontFamily: 'Didot', // Regular Didot font
+    fontSize: 34.sp,
+    fontWeight: FontWeight.normal, // Regular weight
+  );
+
+  static TextStyle kDidotBold34 = TextStyle(
+    fontFamily: 'Didot', // Bold Didot font
+    fontSize: 34.sp,
+    fontWeight: FontWeight.w700, // Bold weight
+  );
+
+  static TextStyle kDidotItalic34 = TextStyle(
+    fontFamily: 'Didot', // Italic Didot font
+    fontSize: 34.sp,
+    fontStyle: FontStyle.italic, // Italic style
+  );
+
+  static TextStyle kDidotTitle34 = TextStyle(
+    fontFamily: 'Didot', // Title Didot font
+    fontSize: 34.sp,
+    fontWeight: FontWeight
+        .w700, // Bold or Title weight (adjust as per the font’s actual style)
+  );
+
   static TextStyle kExtraBold46 = GoogleFonts.outfit(
     fontSize: 46.sp,
     fontWeight: FontWeight.bold,

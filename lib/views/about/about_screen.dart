@@ -18,7 +18,7 @@ class AboutScreen extends StatelessWidget {
             image: AssetImage(AppAssets.kAbout2),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
-              AppColors.kBlackColor.withAlpha(180),
+              AppColors.kBlackColor.withAlpha(200),
               BlendMode.darken,
             ),
           ),
@@ -30,23 +30,32 @@ class AboutScreen extends StatelessWidget {
               Container(
                 height: 300.h,
                 width: 220.w,
+                padding: EdgeInsets.all(7.r),
                 decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(AppAssets.kAbout),
-                    fit: BoxFit.cover, // keeps it covering the entire box
+                  color: AppColors.kWhiteColor.withAlpha(70),
+                  borderRadius: BorderRadius.circular(35.r),
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30.r),
+                    image: DecorationImage(
+                      image: AssetImage(AppAssets.kAbout),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
               SizedBox(height: 20.h),
               Center(
                 child: Text(
-                  "Interior of a \n Mansion",
-                  style: AppTypography.kBold26
-                      .copyWith(color: AppColors.kWhiteColor),
+                  "Interior of a Mansion",
+                  style: AppTypography.kDidotTitle34.copyWith(
+                    color: AppColors.kWhiteColor,
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 10.h),
               Text(
                 "The influencial critic John Ruskin became a close friend, neighbor, and great support of the artist.",
                 style: AppTypography.kLight14
