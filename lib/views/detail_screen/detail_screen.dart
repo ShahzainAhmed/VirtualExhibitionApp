@@ -5,10 +5,7 @@ import 'package:get/get.dart';
 import 'package:virtual_exhibition_app/models/tile_model.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
 import 'package:virtual_exhibition_app/resources/app_typography.dart';
-import 'package:virtual_exhibition_app/views/detail_screen/widget/bottom_sheet_widget.dart';
 import 'package:virtual_exhibition_app/views/detail_screen/widget/image_container.dart';
-import 'package:virtual_exhibition_app/views/detail_screen/widget/like_button.dart';
-import 'package:virtual_exhibition_app/views/detail_screen/widget/specs_widget.dart';
 
 class DetailScreen extends StatefulWidget {
   const DetailScreen({super.key});

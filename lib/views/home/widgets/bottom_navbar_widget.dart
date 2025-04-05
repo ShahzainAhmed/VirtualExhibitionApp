@@ -3,7 +3,6 @@ import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
-import 'package:virtual_exhibition_app/views/about/about_screen.dart';
 import 'package:virtual_exhibition_app/views/exhibition/exhibition_screen.dart';
 import 'package:virtual_exhibition_app/views/home/home_screen.dart';
 

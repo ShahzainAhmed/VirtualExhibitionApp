@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:virtual_exhibition_app/models/tile_model.dart';
 import 'package:virtual_exhibition_app/routes/app_routes.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/app_bar_widget.dart';
-import 'package:virtual_exhibition_app/views/home/widgets/bottom_navbar_widget.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/large_tiles.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/search_bar_widget.dart';
 

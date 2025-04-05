@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:virtual_exhibition_app/resources/app_assets.dart';
 import 'package:virtual_exhibition_app/resources/app_colors.dart';
 import 'package:virtual_exhibition_app/resources/app_typography.dart';
-import 'package:virtual_exhibition_app/routes/app_routes.dart';
 import 'package:virtual_exhibition_app/views/home/widgets/bottom_navbar_widget.dart';
 
 class OnboardingScreen extends StatelessWidget {
