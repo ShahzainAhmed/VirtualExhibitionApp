@@ -1,10 +1,9 @@
 # Virtual Exhibition App Flutter
 
-https://dribbble.com/shots/16053004-Virtual-Exhibition-App-Design
+### LinkedIn Post:
+https://www.linkedin.com/feed/update/urn:li:activity:7314567307198967808/
 
-![image](https://github.com/user-attachments/assets/276e1386-a979-44ec-b9ef-02b25d617db4)
-![image](https://github.com/user-attachments/assets/6e155bfd-e86f-481c-8605-e7b444173248)
-
-
-
-
+### Preview:
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/9997414d-d159-4dd5-b137-c8aae00a9717" width=100/>
+<div/>
