@@ -46,13 +46,13 @@ To run this app:
 
 Here are some screenshots of the application:
 
-| Dashboard                                          | Transaction History                            | Transfer Money                                         |
+| Splash Screen                                          | Home Screen                            | Detail Screen                                         |
 | -------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
-| <img src="screenshots/dashboard.png" width="250"> | <img src="screenshots/transactionhistory.png" width="250"> | <img src="screenshots/transfer.png" width="250"> |
+| <img src="Screenshots/Splash.png" width="250"> | <img src="Screenshots/Home.png" width="250"> | <img src="Screenshots/Detail.png" width="250"> |
 
-| Budget Management                                        | Account Overview                                        | Settings                                        |
-| ---------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
-| <img src="screenshots/budgets.png" width="250"> | <img src="screenshots/overview.png" width="250"> | <img src="screenshots/settings.png" width="250"> |
+| Exhibition Screen                                        | Cover Screen                                        
+| ---------------------------------------------------- | ----------------------------------------------------- 
+| <img src="Screenshots/Exhibition.png" width="250"> | <img src="Screenshots/cover.png" width="250"> |
 
 
 ## LinkedIn Post:
