@@ -48,11 +48,11 @@ Here are some screenshots of the application:
 
 | Dashboard                                          | Transaction History                            | Transfer Money                                         |
 | -------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
-| <img src="screenshots/dashboard.png" width="250"> | <img src="screenshots/transactionhistory.png" width="250"> | <img src="screenshots/transfer.png" width="250"> |
+| <img src="screenshots/splash.png" width="250"> | <img src="screenshots/home.png" width="250"> | <img src="screenshots/detail.png" width="250"> |
 
 | Budget Management                                        | Account Overview                                        | Settings                                        |
 | ---------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
-| <img src="screenshots/budgets.png" width="250"> | <img src="screenshots/overview.png" width="250"> | <img src="screenshots/settings.png" width="250"> |
+| <img src="screenshots/exhibition.png" width="250"> | <img src="screenshots/cover.png" width="250"> | <img src="screenshots/settings.png" width="250"> |
 
 
 ## LinkedIn Post:
