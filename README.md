@@ -48,11 +48,11 @@ Here are some screenshots of the application:
 
 | Splash Screen                                          | Home Screen                            | Detail Screen                                         |
 | -------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
-| <img src="Screenshots/splash.png" width="250"> | <img src="Screenshots/home.png" width="250"> | <img src="Screenshots/detail.png" width="250"> |
+| <img src="Screenshots/Splash.png" width="250"> | <img src="Screenshots/Home.png" width="250"> | <img src="Screenshots/Detail.png" width="250"> |
 
-| Budget Management                                        | Account Overview                                        | Settings                                        |
-| ---------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
-| <img src="Screenshots/exhibition.png" width="250"> | <img src="Screenshots/cover.png" width="250"> | <img src="Screenshots/settings.png" width="250"> |
+| Exhibition Screen                                        | Cover Screen                                        
+| ---------------------------------------------------- | ----------------------------------------------------- 
+| <img src="Screenshots/Exhibition.png" width="250"> | <img src="Screenshots/cover.png" width="250"> |
 
 
 ## LinkedIn Post:
