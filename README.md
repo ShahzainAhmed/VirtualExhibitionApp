@@ -42,6 +42,19 @@ To run this app:
 1. Run `flutter pub get` to install dependencies
 2. Run `flutter run` to start the app
 
+## Screenshots
+
+Here are some screenshots of the application:
+
+| Dashboard                                          | Transaction History                            | Transfer Money                                         |
+| -------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
+| <img src="screenshots/dashboard.png" width="250"> | <img src="screenshots/transactionhistory.png" width="250"> | <img src="screenshots/transfer.png" width="250"> |
+
+| Budget Management                                        | Account Overview                                        | Settings                                        |
+| ---------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- |
+| <img src="screenshots/budgets.png" width="250"> | <img src="screenshots/overview.png" width="250"> | <img src="screenshots/settings.png" width="250"> |
+
+
 ## LinkedIn Post:
 https://www.linkedin.com/feed/update/urn:li:activity:7314567307198967808/
 
