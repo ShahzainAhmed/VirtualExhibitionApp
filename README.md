@@ -46,7 +46,7 @@ To run this app:
 
 Here are some screenshots of the application:
 
-| Splash Screen                                          | Home Screen                            | Detail Screen                                         |
+| Onboarding Screen                                          | Home Screen                            | Detail Screen                                         |
 | -------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
 | <img src="Screenshots/Splash.png" width="250"> | <img src="Screenshots/Home.png" width="250"> | <img src="Screenshots/Detail.png" width="250"> |
 
