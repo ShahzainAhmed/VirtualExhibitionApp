@@ -1,4 +1,4 @@
-# Virtual Exhibition App Flutter
+# Virtual Exhibition App
 
 An immersive virtual exhibition experience built with Flutter. This app allows users to explore various exhibits, view detailed information, and enjoy interactive features.
 
