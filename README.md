@@ -50,9 +50,9 @@ Here are some screenshots of the application:
 | -------------------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
 | <img src="Screenshots/Splash.png" width="250"> | <img src="Screenshots/Home.png" width="250"> | <img src="Screenshots/Detail.png" width="250"> |
 
-| Exhibition Screen                                        | Cover Screen                                        
-| ---------------------------------------------------- | ----------------------------------------------------- 
-| <img src="Screenshots/Exhibition.png" width="250"> | <img src="Screenshots/cover.png" width="250"> |
+| Exhibition Screen                                        | Cover Screen                                        | Detail Screen
+| ---------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |  
+| <img src="Screenshots/Exhibition.png" width="250"> | <img src="Screenshots/cover.png" width="250"> | <img src="Screenshots/Detail2.png" width="250"> |
 
 
 ## LinkedIn Post:
