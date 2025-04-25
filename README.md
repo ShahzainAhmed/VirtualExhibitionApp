@@ -1,5 +1,24 @@
 # Virtual Exhibition App Flutter
 
+An immersive virtual exhibition experience built with Flutter. This app allows users to explore various exhibits, view detailed information, and enjoy interactive features.
+
+## Features
+
+- **Browse Exhibits**: Explore different virtual exhibits with a visually appealing UI.
+- **Exhibit Details**: View detailed information about each exhibit, including descriptions and images.
+- **Interactive UI**: Smooth navigation and engaging user interactions with animations.
+- **Categories**: Exhibits are categorized for easy browsing and discovery.
+- **Responsive Design**: Optimized layout for both mobile and tablet screens.
+
+## Project Structure
+
+- **lib/models/**: Data models for categories and tiles for the exhibits.
+- **lib/resources/**: Resources related to app assets, colors, and typography.
+- **lib/routes/**: Handles navigation and page transitions within the app.
+- **lib/utils/**: Utility files for managing the app's state.
+- **lib/views/**: UI screens for the app, such as the home screen, onboarding, and exhibit details.
+  - **lib/views/[screen_name]/widgets/**: Screen-specific custom widgets for modularity and reusability.
+
 ### LinkedIn Post:
 https://www.linkedin.com/feed/update/urn:li:activity:7314567307198967808/
 
