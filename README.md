@@ -19,7 +19,31 @@ An immersive virtual exhibition experience built with Flutter. This app allows u
 - **lib/views/**: UI screens for the app, such as the home screen, onboarding, and exhibit details.
   - **lib/views/[screen_name]/widgets/**: Screen-specific custom widgets for modularity and reusability.
 
-### LinkedIn Post:
+<!--
+## Key Components
+
+### Firebase Services
+
+- **FirebaseAuthService**: Handles user authentication and OTP verification
+- **FirestoreService**: Manages Firestore database operations
+- **AccountService**: Manages banking accounts
+- **TransactionService**: Handles money transfers between accounts
+
+### Security Features
+
+- **Two-Factor Authentication**: OTP verification for sensitive operations
+- **Data Validation**: Server-side and client-side validation
+- **Batch Operations**: Atomic transactions for money transfers
+- **Secure Routing**: Authentication-based navigation
+-->
+
+To run this app:
+
+1. Firebase is already set up using FlutterFire CLI
+2. Run `flutter pub get` to install dependencies
+3. Run `flutter run` to start the app
+
+## LinkedIn Post:
 https://www.linkedin.com/feed/update/urn:li:activity:7314567307198967808/
 
 ### Preview:
