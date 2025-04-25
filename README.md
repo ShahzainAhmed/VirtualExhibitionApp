@@ -39,9 +39,8 @@ An immersive virtual exhibition experience built with Flutter. This app allows u
 
 To run this app:
 
-1. Firebase is already set up using FlutterFire CLI
-2. Run `flutter pub get` to install dependencies
-3. Run `flutter run` to start the app
+1. Run `flutter pub get` to install dependencies
+2. Run `flutter run` to start the app
 
 ## LinkedIn Post:
 https://www.linkedin.com/feed/update/urn:li:activity:7314567307198967808/
